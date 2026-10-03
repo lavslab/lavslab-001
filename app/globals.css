@@ -47,8 +47,10 @@ button {
   position: relative;
   min-height: 100svh;
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
+
   padding: 32px 42px 26px;
 
   background:
@@ -70,12 +72,12 @@ button {
     var(--ivory);
 }
 
-/* very subtle background grid */
-
 .background-grid {
   position: absolute;
   inset: 0;
+
   pointer-events: none;
+
   opacity: 0.14;
 
   background-image:
@@ -99,19 +101,22 @@ button {
     );
 }
 
-/* ambient blobs */
-
 .ambient {
   position: absolute;
+
   border-radius: 999px;
+
   filter: blur(85px);
+
   pointer-events: none;
 }
 
 .ambient-one {
   width: 340px;
   height: 340px;
+
   background: rgba(216, 181, 173, 0.2);
+
   top: 20%;
   left: -210px;
 }
@@ -119,7 +124,9 @@ button {
 .ambient-two {
   width: 360px;
   height: 360px;
+
   background: rgba(183, 143, 134, 0.13);
+
   bottom: -100px;
   right: -220px;
 }
@@ -158,7 +165,9 @@ button {
 
 .tiny-heart {
   font-family: Georgia, "Times New Roman", serif;
+
   font-size: 23px;
+
   color: var(--rose);
 }
 
@@ -194,6 +203,7 @@ button {
 .title-wrap {
   position: relative;
   z-index: 12;
+
   margin-bottom: 3px;
 }
 
@@ -204,6 +214,7 @@ button {
 
   font-size: 8px;
   font-weight: 600;
+
   letter-spacing: 0.48em;
 }
 
@@ -223,6 +234,7 @@ button {
   font-size: clamp(46px, 6vw, 76px);
 
   font-weight: 400;
+
   letter-spacing: -0.055em;
 
   color: var(--espresso);
@@ -248,6 +260,7 @@ button {
 
 .title-heart {
   display: inline-block;
+
   margin-left: 3px;
 
   font-style: normal;
@@ -406,8 +419,7 @@ button {
 
   color: rgba(118, 76, 68, 0.27);
 
-  text-shadow:
-    0 1px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.2);
 
   transform: translateY(-2px);
 }
@@ -500,6 +512,7 @@ button {
 
 .mirror-glow {
   position: absolute;
+
   inset: 0;
 
   background:
@@ -569,12 +582,11 @@ button {
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 14px;
+
   line-height: 1.45;
 
   color: var(--espresso);
 }
-
-/* mirror sparkles */
 
 .sparkle {
   position: absolute;
@@ -659,18 +671,15 @@ button {
 }
 
 .is-open .mirror-shine {
-  animation:
-    mirrorSweep 1.25s ease 0.8s forwards;
+  animation: mirrorSweep 1.25s ease 0.8s forwards;
 }
 
 .is-open .sparkle-one {
-  animation:
-    sparkle 1.5s ease 1.1s infinite;
+  animation: sparkle 1.5s ease 1.1s infinite;
 }
 
 .is-open .sparkle-two {
-  animation:
-    sparkle 1.7s ease 1.35s infinite;
+  animation: sparkle 1.7s ease 1.35s infinite;
 }
 
 .is-open .message-changing {
@@ -742,6 +751,7 @@ button {
 .open-button,
 .again-button {
   position: relative;
+
   z-index: 15;
 
   appearance: none;
@@ -762,9 +772,7 @@ button {
 
   padding: 15px 26px;
 
-  border:
-    1px solid
-    rgba(183, 143, 134, 0.78);
+  border: 1px solid rgba(183, 143, 134, 0.78);
 
   border-radius: 999px;
 
@@ -774,8 +782,7 @@ button {
 
   gap: 12px;
 
-  background:
-    rgba(247, 242, 238, 0.76);
+  background: rgba(247, 242, 238, 0.76);
 
   backdrop-filter: blur(8px);
 
@@ -826,9 +833,7 @@ button {
 
   letter-spacing: 0.3em;
 
-  border-bottom:
-    1px solid
-    rgba(183, 143, 134, 0.45);
+  border-bottom: 1px solid rgba(183, 143, 134, 0.45);
 
   transition:
     letter-spacing 0.25s ease,
@@ -865,8 +870,7 @@ button {
 
   opacity: 0.55;
 
-  transition:
-    opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 .hint-hidden {
@@ -917,11 +921,9 @@ button {
   width: 175px;
   height: 65px;
 
-  transform:
-    rotate(var(--object-rotate));
+  transform: rotate(var(--object-rotate));
 
-  animation:
-    floatObject 6s ease-in-out infinite;
+  animation: floatObject 6s ease-in-out infinite;
 }
 
 .dumbbell-bar {
@@ -942,15 +944,11 @@ button {
       #c79990
     );
 
-  border:
-    1px solid
-    rgba(112, 76, 69, 0.25);
+  border: 1px solid rgba(112, 76, 69, 0.25);
 
   box-shadow:
-    inset 0 3px 4px
-      rgba(255, 255, 255, 0.35),
-    0 6px 12px
-      rgba(83, 58, 52, 0.12);
+    inset 0 3px 4px rgba(255, 255, 255, 0.35),
+    0 6px 12px rgba(83, 58, 52, 0.12);
 }
 
 .dumbbell-weight {
@@ -970,15 +968,11 @@ button {
       #c8988f
     );
 
-  border:
-    1px solid
-    rgba(112, 76, 69, 0.27);
+  border: 1px solid rgba(112, 76, 69, 0.27);
 
   box-shadow:
-    inset 3px 3px 5px
-      rgba(255, 255, 255, 0.28),
-    0 8px 15px
-      rgba(83, 58, 52, 0.13);
+    inset 3px 3px 5px rgba(255, 255, 255, 0.28),
+    0 8px 15px rgba(83, 58, 52, 0.13);
 }
 
 .weight-left {
@@ -989,8 +983,6 @@ button {
   right: 9px;
 }
 
-/* little inner lines on dumbbell */
-
 .dumbbell-weight::after {
   content: "";
 
@@ -998,13 +990,10 @@ button {
 
   top: 8px;
   bottom: 8px;
-
   left: 8px;
   right: 8px;
 
-  border:
-    1px solid
-    rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
   border-radius: 10px;
 }
@@ -1022,11 +1011,9 @@ button {
   width: 72px;
   height: 165px;
 
-  transform:
-    rotate(var(--object-rotate));
+  transform: rotate(var(--object-rotate));
 
-  animation:
-    floatObject 7s ease-in-out 0.7s infinite;
+  animation: floatObject 7s ease-in-out 0.7s infinite;
 }
 
 .bottle-lid {
@@ -1038,8 +1025,7 @@ button {
   width: 37px;
   height: 25px;
 
-  border-radius:
-    8px 8px 5px 5px;
+  border-radius: 8px 8px 5px 5px;
 
   background:
     linear-gradient(
@@ -1049,8 +1035,7 @@ button {
     );
 
   box-shadow:
-    inset 0 2px
-      rgba(255, 255, 255, 0.08);
+    inset 0 2px rgba(255, 255, 255, 0.08);
 }
 
 .bottle-body {
@@ -1062,8 +1047,7 @@ button {
   width: 62px;
   height: 138px;
 
-  border-radius:
-    19px 19px 22px 22px;
+  border-radius: 19px 19px 22px 22px;
 
   display: flex;
   justify-content: center;
@@ -1076,17 +1060,12 @@ button {
       #c4968c
     );
 
-  border:
-    1px solid
-    rgba(105, 71, 64, 0.27);
+  border: 1px solid rgba(105, 71, 64, 0.27);
 
   box-shadow:
-    inset 7px 4px 10px
-      rgba(255, 255, 255, 0.24),
-    inset -5px -4px 10px
-      rgba(102, 66, 58, 0.09),
-    0 15px 25px
-      rgba(73, 51, 46, 0.12);
+    inset 7px 4px 10px rgba(255, 255, 255, 0.24),
+    inset -5px -4px 10px rgba(102, 66, 58, 0.09),
+    0 15px 25px rgba(73, 51, 46, 0.12);
 }
 
 .bottle-body::before {
@@ -1102,18 +1081,13 @@ button {
 
   border-radius: 999px;
 
-  background:
-    rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .bottle-heart {
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Georgia, "Times New Roman", serif;
 
-  color:
-    rgba(255, 250, 247, 0.85);
+  color: rgba(255, 250, 247, 0.85);
 
   font-size: 27px;
 }
@@ -1131,11 +1105,9 @@ button {
   width: 38px;
   height: 130px;
 
-  transform:
-    rotate(var(--object-rotate));
+  transform: rotate(var(--object-rotate));
 
-  animation:
-    floatObject 5.8s ease-in-out 1.2s infinite;
+  animation: floatObject 5.8s ease-in-out 1.2s infinite;
 }
 
 .gloss-cap {
@@ -1147,8 +1119,7 @@ button {
   width: 32px;
   height: 48px;
 
-  border-radius:
-    8px 8px 4px 4px;
+  border-radius: 8px 8px 4px 4px;
 
   background:
     linear-gradient(
@@ -1158,8 +1129,7 @@ button {
     );
 
   box-shadow:
-    inset 4px 2px 4px
-      rgba(255, 255, 255, 0.08);
+    inset 4px 2px 4px rgba(255, 255, 255, 0.08);
 }
 
 .gloss-body {
@@ -1171,8 +1141,7 @@ button {
   width: 38px;
   height: 82px;
 
-  border-radius:
-    5px 5px 12px 12px;
+  border-radius: 5px 5px 12px 12px;
 
   display: flex;
   align-items: center;
@@ -1185,27 +1154,19 @@ button {
       rgba(185, 128, 118, 0.92)
     );
 
-  border:
-    1px solid
-    rgba(113, 73, 65, 0.26);
+  border: 1px solid rgba(113, 73, 65, 0.26);
 
   box-shadow:
-    inset 5px 3px 8px
-      rgba(255, 255, 255, 0.22),
-    0 10px 18px
-      rgba(76, 52, 47, 0.12);
+    inset 5px 3px 8px rgba(255, 255, 255, 0.22),
+    0 10px 18px rgba(76, 52, 47, 0.12);
 }
 
 .gloss-body span {
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Georgia, "Times New Roman", serif;
 
   font-size: 16px;
 
-  color:
-    rgba(255, 250, 247, 0.75);
+  color: rgba(255, 250, 247, 0.75);
 }
 
 /* =========================================
@@ -1223,11 +1184,9 @@ button {
 
   border-radius: 50%;
 
-  transform:
-    rotate(var(--object-rotate));
+  transform: rotate(var(--object-rotate));
 
-  animation:
-    floatObject 6.5s ease-in-out 0.3s infinite;
+  animation: floatObject 6.5s ease-in-out 0.3s infinite;
 
   background:
     repeating-radial-gradient(
@@ -1237,10 +1196,8 @@ button {
     );
 
   box-shadow:
-    0 14px 22px
-      rgba(74, 50, 45, 0.11),
-    inset 3px 3px 7px
-      rgba(255, 255, 255, 0.22);
+    0 14px 22px rgba(74, 50, 45, 0.11),
+    inset 3px 3px 7px rgba(255, 255, 255, 0.22);
 }
 
 .scrunchie::before {
@@ -1254,16 +1211,14 @@ button {
   left: 50%;
   top: 50%;
 
-  transform:
-    translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
   border-radius: 50%;
 
   background: var(--ivory);
 
   box-shadow:
-    inset 0 3px 6px
-      rgba(94, 64, 58, 0.08);
+    inset 0 3px 6px rgba(94, 64, 58, 0.08);
 }
 
 /* =========================================
@@ -1281,11 +1236,9 @@ button {
 
   padding: 18px 15px;
 
-  transform:
-    rotate(var(--object-rotate));
+  transform: rotate(var(--object-rotate));
 
-  animation:
-    floatObject 7.2s ease-in-out 1s infinite;
+  animation: floatObject 7.2s ease-in-out 1s infinite;
 
   display: flex;
   flex-direction: column;
@@ -1295,16 +1248,12 @@ button {
 
   border-radius: 4px;
 
-  background:
-    rgba(255, 250, 247, 0.87);
+  background: rgba(255, 250, 247, 0.87);
 
-  border:
-    1px solid
-    rgba(183, 143, 134, 0.35);
+  border: 1px solid rgba(183, 143, 134, 0.35);
 
   box-shadow:
-    0 15px 28px
-      rgba(79, 55, 49, 0.09);
+    0 15px 28px rgba(79, 55, 49, 0.09);
 
   backdrop-filter: blur(6px);
 }
@@ -1316,9 +1265,7 @@ button {
 
   inset: 6px;
 
-  border:
-    1px solid
-    rgba(183, 143, 134, 0.18);
+  border: 1px solid rgba(183, 143, 134, 0.18);
 
   pointer-events: none;
 }
@@ -1328,10 +1275,7 @@ button {
 
   z-index: 2;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Georgia, "Times New Roman", serif;
 
   font-size: 20px;
 
@@ -1361,10 +1305,7 @@ button {
   right: 12px;
   top: 9px;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Georgia, "Times New Roman", serif;
 
   color: var(--rose);
 
@@ -1382,13 +1323,9 @@ button {
 
   pointer-events: none;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Georgia, "Times New Roman", serif;
 
-  color:
-    rgba(183, 143, 134, 0.5);
+  color: rgba(183, 143, 134, 0.5);
 }
 
 .detail-one {
@@ -1440,10 +1377,7 @@ footer {
 footer p {
   margin: 0;
 
-  font-family:
-    Georgia,
-    "Times New Roman",
-    serif;
+  font-family: Georgia, "Times New Roman", serif;
 
   font-size: 10px;
 
@@ -1461,10 +1395,7 @@ footer strong {
 }
 
 .footer-code {
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
   font-size: 7px;
 
@@ -1507,369 +1438,500 @@ footer strong {
 
 /* =========================================
    MOBILE
+   FITS INSIDE THE IPHONE VIEWPORT
    ========================================= */
 
 @media (max-width: 600px) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .page-shell {
+    width: 100%;
+
+    min-height: 100svh;
+    height: 100svh;
+
     padding:
-      25px
-      20px
-      22px;
+      max(16px, env(safe-area-inset-top))
+      18px
+      max(12px, env(safe-area-inset-bottom));
+
+    overflow: hidden;
   }
 
   .background-grid {
-    opacity: 0.1;
+    opacity: 0.08;
 
-    background-size:
-      34px 34px;
+    background-size: 32px 32px;
+  }
+
+  /* TOP BAR */
+
+  .topbar {
+    flex: 0 0 auto;
   }
 
   .lab-mark {
-    font-size: 8px;
+    font-size: 7px;
+
+    letter-spacing: 0.3em;
   }
 
   .tiny-heart {
-    font-size: 20px;
+    font-size: 18px;
   }
+
+  /* HERO */
 
   .hero {
-    padding:
-      25px
-      0
-      15px;
+    flex: 1 1 auto;
+
+    min-height: 0;
 
     justify-content: center;
+
+    padding: 0;
+
+    transform: translateY(-2px);
   }
 
-  /* title */
+  /* TITLE */
 
   .title-wrap {
-    margin-bottom: 0;
+    z-index: 15;
+
+    margin: 0 0 -8px;
+
+    transform: scale(0.78);
+
+    transform-origin: center bottom;
   }
 
   .eyebrow {
+    margin-bottom: 8px;
+
     font-size: 6px;
 
-    letter-spacing: 0.4em;
-
-    margin-bottom: 9px;
+    letter-spacing: 0.36em;
   }
 
   .locked-title {
-    font-size: 47px;
+    font-size: 45px;
   }
 
   .looks-good-title {
-    margin-top: 6px;
-    margin-left: 67px;
+    margin-top: 5px;
+    margin-left: 62px;
 
-    font-size: 27px;
+    font-size: 26px;
   }
 
   .subtitle {
-    margin-top: 15px;
+    margin-top: 13px;
 
-    font-size: 11px;
+    font-size: 10px;
   }
 
-  /* compact */
+  /* COMPACT */
 
   .compact-scene {
-    width: 330px;
-    height: 350px;
+    width: 290px;
+    height: 245px;
+
+    margin: -4px 0 -5px;
+
+    flex: 0 0 auto;
   }
 
   .compact {
-    width: 270px;
-    height: 140px;
+    width: 225px;
+    height: 110px;
   }
 
   .compact-base,
   .compact-lid {
-    width: 270px;
-    height: 130px;
+    width: 225px;
+    height: 108px;
   }
 
   .compact-lid {
-    bottom: 17px;
+    bottom: 14px;
   }
 
   .compact-base {
-    height: 130px;
+    height: 108px;
+  }
+
+  .compact-base::after {
+    inset: 7px;
+  }
+
+  .lid-outer {
+    padding: 8px;
   }
 
   .powder {
-    inset: 15px;
+    inset: 12px;
 
-    padding: 7px;
+    padding: 6px;
   }
 
   .embossed-heart {
-    font-size: 41px;
+    font-size: 33px;
   }
 
+  /* HINGE */
+
   .hinge {
-    bottom: 112px;
+    bottom: 93px;
   }
 
   .hinge span {
-    width: 21px;
-    height: 7px;
+    width: 18px;
+    height: 6px;
   }
 
+  /* OPEN POSITION */
+
   .is-open .compact-lid {
-    bottom: 122px;
+    bottom: 100px;
+
+    transform:
+      rotateX(-8deg)
+      scale(1.035);
+  }
+
+  /* MIRROR MESSAGE */
+
+  .mirror-message {
+    width: 79%;
   }
 
   .message-heading {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 
-    font-size: 6px;
+    font-size: 5px;
 
-    letter-spacing: 0.22em;
+    letter-spacing: 0.2em;
   }
 
   .message-text {
-    font-size: 11px;
+    font-size: 9.5px;
+
+    line-height: 1.35;
   }
 
-  /* mobile decor */
+  .sparkle-one {
+    font-size: 12px;
+  }
+
+  .sparkle-two {
+    font-size: 8px;
+  }
+
+  /* BUTTON */
+
+  .open-button {
+    min-width: 170px;
+
+    margin-top: -2px;
+
+    padding: 11px 19px;
+
+    font-size: 7px;
+
+    letter-spacing: 0.27em;
+  }
+
+  .button-heart {
+    font-size: 13px;
+  }
+
+  .again-button {
+    margin-top: -3px;
+
+    padding: 8px 15px;
+
+    font-size: 7px;
+
+    letter-spacing: 0.27em;
+  }
+
+  .again-button span:last-child {
+    font-size: 13px;
+  }
+
+  .hint {
+    margin-top: 8px;
+  }
+
+  .hint p {
+    font-size: 5px;
+  }
+
+  .hint-line {
+    width: 17px;
+  }
+
+  /* LOCK CARD */
 
   .lock-card {
-    width: 105px;
-    height: 67px;
+    width: 82px;
+    height: 52px;
 
-    left: -27px;
-    top: 17%;
+    left: -23px;
+    top: 24%;
 
-    padding: 12px 10px;
+    padding: 9px 8px;
 
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   .lock-card strong {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .lock-card small {
-    font-size: 4px;
+    margin-top: 3px;
+
+    font-size: 3px;
   }
 
   .card-heart {
-    font-size: 12px;
+    right: 6px;
+    top: 4px;
 
-    right: 8px;
-    top: 6px;
+    font-size: 9px;
   }
 
+  /* DUMBBELL */
+
   .dumbbell {
-    left: -61px;
-    top: 53%;
+    left: -45px;
+    top: 56%;
 
-    width: 135px;
-    height: 50px;
+    width: 105px;
+    height: 40px;
 
-    opacity: 0.75;
+    opacity: 0.68;
   }
 
   .dumbbell-bar {
-    width: 82px;
-    height: 13px;
+    width: 63px;
+    height: 10px;
 
-    left: 27px;
-    top: 19px;
+    left: 21px;
+    top: 15px;
   }
 
   .dumbbell-weight {
-    width: 35px;
-    height: 48px;
+    width: 28px;
+    height: 38px;
 
     top: 1px;
 
-    border-radius: 11px;
+    border-radius: 9px;
   }
 
   .weight-left {
-    left: 7px;
+    left: 5px;
   }
 
   .weight-right {
-    right: 7px;
+    right: 5px;
   }
 
+  .dumbbell-weight::after {
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+
+    border-radius: 7px;
+  }
+
+  /* WATER BOTTLE */
+
   .water-bottle {
-    right: -25px;
-    top: 45%;
+    right: -15px;
+    top: 47%;
 
-    width: 55px;
-    height: 125px;
+    width: 43px;
+    height: 98px;
 
-    opacity: 0.75;
+    opacity: 0.7;
   }
 
   .bottle-lid {
-    left: 14px;
+    left: 11px;
 
-    width: 29px;
-    height: 20px;
+    width: 23px;
+    height: 16px;
+
+    border-radius: 5px;
   }
 
   .bottle-body {
-    top: 17px;
-    left: 4px;
+    top: 14px;
+    left: 3px;
 
-    width: 48px;
-    height: 106px;
+    width: 38px;
+    height: 83px;
 
     border-radius:
-      15px 15px 18px 18px;
+      12px 12px 15px 15px;
+  }
+
+  .bottle-body::before {
+    top: 7px;
+    bottom: 7px;
+    left: 6px;
+
+    width: 4px;
   }
 
   .bottle-heart {
-    font-size: 21px;
+    font-size: 17px;
   }
 
+  /* LIP GLOSS */
+
   .lip-gloss {
-    right: 9px;
-    bottom: 10%;
+    right: 7px;
+    bottom: 7%;
 
-    width: 30px;
-    height: 102px;
+    width: 24px;
+    height: 81px;
 
-    opacity: 0.72;
+    opacity: 0.68;
   }
 
   .gloss-cap {
     left: 2px;
 
-    width: 26px;
-    height: 38px;
+    width: 20px;
+    height: 30px;
+
+    border-radius: 5px;
   }
 
   .gloss-body {
-    top: 35px;
+    top: 28px;
 
-    width: 30px;
-    height: 65px;
+    width: 24px;
+    height: 52px;
+
+    border-radius:
+      4px 4px 8px 8px;
   }
 
+  .gloss-body span {
+    font-size: 11px;
+  }
+
+  /* SCRUNCHIE */
+
   .scrunchie {
-    left: -18px;
-    bottom: 10%;
+    left: -9px;
+    bottom: 7%;
 
-    width: 67px;
-    height: 67px;
+    width: 53px;
+    height: 53px;
 
-    opacity: 0.7;
+    opacity: 0.64;
+
+    background:
+      repeating-radial-gradient(
+        circle at 50% 50%,
+        #d5afa7 0 4px,
+        #c7988f 5px 8px
+      );
   }
 
   .scrunchie::before {
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
   }
 
+  /* FLOATING DETAILS */
+
   .detail-one {
-    top: 28%;
+    top: 30%;
     right: 8%;
 
-    font-size: 17px;
+    font-size: 13px;
   }
 
   .detail-two {
-    left: 12%;
-    top: 70%;
+    top: 72%;
+    left: 11%;
+
+    font-size: 11px;
   }
 
   .detail-three {
-    right: 16%;
+    right: 15%;
+    bottom: 18%;
+
+    font-size: 8px;
   }
 
-  /* buttons */
-
-  .open-button {
-    min-width: 195px;
-
-    padding:
-      14px
-      23px;
-  }
-
-  /* footer */
+  /* FOOTER */
 
   footer {
+    flex: 0 0 auto;
+
+    padding-top: 2px;
+
     align-items: center;
   }
 
   footer p {
-    font-size: 9px;
+    font-size: 7px;
   }
 
   .footer-code {
-    font-size: 6px;
+    font-size: 5px;
 
-    letter-spacing: 0.25em;
+    letter-spacing: 0.22em;
   }
 }
 
 /* =========================================
-   SHORT SCREENS
+   EXTRA SHORT PHONES
    ========================================= */
 
-@media (max-height: 760px) {
-  .page-shell {
-    padding-top: 20px;
-    padding-bottom: 18px;
-  }
-
-  .hero {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-
+@media (max-width: 600px) and (max-height: 700px) {
   .title-wrap {
-    transform: scale(0.9);
+    transform: scale(0.68);
 
-    margin-bottom: -7px;
+    margin-bottom: -15px;
   }
 
   .compact-scene {
-    height: 315px;
+    height: 215px;
 
-    transform: scale(0.88);
+    transform: scale(0.9);
 
-    margin:
-      -14px
-      0
-      -10px;
+    margin: -10px 0 -13px;
   }
 
-  .lock-card {
-    transform:
-      scale(0.85)
-      rotate(-8deg);
+  .open-button {
+    padding: 9px 17px;
   }
 
-  .dumbbell {
-    transform:
-      scale(0.85)
-      rotate(-18deg);
+  .again-button {
+    padding: 6px 13px;
   }
 
-  .water-bottle {
-    transform:
-      scale(0.85)
-      rotate(13deg);
-  }
-
-  .lip-gloss {
-    transform:
-      scale(0.85)
-      rotate(20deg);
-  }
-
+  .lock-card,
+  .dumbbell,
+  .water-bottle,
+  .lip-gloss,
   .scrunchie {
-    transform:
-      scale(0.85)
-      rotate(9deg);
+    animation: none;
   }
 }
