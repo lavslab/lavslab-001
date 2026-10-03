@@ -1417,7 +1417,6 @@ footer strong {
     right: 14%;
   }
 }
-
 /* =========================================
    MOBILE
    TRUE IPHONE / SAFARI ONE-SCREEN LAYOUT
@@ -1482,8 +1481,6 @@ footer strong {
 
   /* =========================================
      HERO
-     IMPORTANT:
-     DO NOT SCALE THE WHOLE HERO
      ========================================= */
 
   .hero {
@@ -1552,21 +1549,27 @@ footer strong {
 
   /* =========================================
      COMPACT SCENE
+
+     The scene reserves the FULL open-compact
+     area so the lid never touches the title
+     and the base never touches CHECK AGAIN.
      ========================================= */
 
   .compact-scene {
     position: relative;
 
     width: 270px;
-    height: 220px;
+    height: 238px;
 
-    flex: 0 0 220px;
+    flex: 0 0 238px;
 
-    margin: -8px 0 -10px;
+    margin: 2px 0 4px;
 
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
+    padding-bottom: 18px;
 
     perspective: 1000px;
 
@@ -1574,11 +1577,15 @@ footer strong {
   }
 
   .compact {
+    position: relative;
+
     width: 205px;
     height: 101px;
 
-     position: relative;
-     top: 22px;
+    /* IMPORTANT:
+       no top offset here.
+       The scene itself handles the spacing. */
+    top: auto;
   }
 
   /* BASE */
@@ -1983,6 +1990,7 @@ footer strong {
   }
 }
 
+
 /* =========================================
    SHORTER IPHONES / SAFARI
    ========================================= */
@@ -2005,15 +2013,19 @@ footer strong {
 
   .compact-scene {
     width: 250px;
-    height: 195px;
+    height: 214px;
 
-    flex-basis: 195px;
+    flex-basis: 214px;
 
-    margin-top: -10px;
-    margin-bottom: -12px;
+    margin-top: 0;
+    margin-bottom: 2px;
+
+    padding-bottom: 16px;
   }
 
   .compact {
+    top: auto;
+
     transform: scale(0.9);
     transform-origin: center bottom;
   }
@@ -2031,6 +2043,7 @@ footer strong {
   }
 }
 
+
 /* =========================================
    VERY SHORT MOBILE SCREENS
    ========================================= */
@@ -2044,14 +2057,18 @@ footer strong {
   }
 
   .compact-scene {
-    height: 178px;
-    flex-basis: 178px;
+    height: 192px;
+    flex-basis: 192px;
 
-    margin-top: -14px;
-    margin-bottom: -15px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-bottom: 14px;
   }
 
   .compact {
+    top: auto;
+
     transform: scale(0.82);
     transform-origin: center bottom;
   }
@@ -2073,6 +2090,8 @@ footer strong {
     font-size: 4.3px;
   }
 }
+
+
 /* =========================================
    FINAL IPHONE FIT FIX
    Keep full design inside Safari viewport
@@ -2110,7 +2129,9 @@ footer strong {
   }
 }
 
+
 /* Extra breathing room for shorter iPhone Safari screens */
+
 @media (max-width: 600px) and (max-height: 800px) {
   .hero {
     transform: scale(0.88);
