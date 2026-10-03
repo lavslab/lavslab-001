@@ -103,20 +103,15 @@ button {
 
 .ambient {
   position: absolute;
-
   border-radius: 999px;
-
   filter: blur(85px);
-
   pointer-events: none;
 }
 
 .ambient-one {
   width: 340px;
   height: 340px;
-
   background: rgba(216, 181, 173, 0.2);
-
   top: 20%;
   left: -210px;
 }
@@ -124,9 +119,7 @@ button {
 .ambient-two {
   width: 360px;
   height: 360px;
-
   background: rgba(183, 143, 134, 0.13);
-
   bottom: -100px;
   right: -220px;
 }
@@ -165,9 +158,7 @@ button {
 
 .tiny-heart {
   font-family: Georgia, "Times New Roman", serif;
-
   font-size: 23px;
-
   color: var(--rose);
 }
 
@@ -196,16 +187,6 @@ button {
   padding: 22px 0 16px;
 }
 
-.hero {
-  flex: 1 1 auto;
-  min-height: 0;
-  justify-content: center;
-  padding: 0;
-
-  transform: translateY(-2px) scale(0.92);
-  transform-origin: center center;
-}
-
 /* =========================================
    TITLE
    ========================================= */
@@ -213,7 +194,6 @@ button {
 .title-wrap {
   position: relative;
   z-index: 12;
-
   margin-bottom: 3px;
 }
 
@@ -224,7 +204,6 @@ button {
 
   font-size: 8px;
   font-weight: 600;
-
   letter-spacing: 0.48em;
 }
 
@@ -242,9 +221,7 @@ button {
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: clamp(46px, 6vw, 76px);
-
   font-weight: 400;
-
   letter-spacing: -0.055em;
 
   color: var(--espresso);
@@ -270,11 +247,8 @@ button {
 
 .title-heart {
   display: inline-block;
-
   margin-left: 3px;
-
   font-style: normal;
-
   transform: rotate(-7deg);
 }
 
@@ -361,7 +335,6 @@ button {
   content: "";
 
   position: absolute;
-
   inset: 9px;
 
   border-radius: 50%;
@@ -522,7 +495,6 @@ button {
 
 .mirror-glow {
   position: absolute;
-
   inset: 0;
 
   background:
@@ -1505,7 +1477,13 @@ footer strong {
 
     padding: 0;
 
-    transform: translateY(-2px);
+    /*
+      FINAL MOBILE FIT:
+      preserves the entire composition while making
+      it small enough to fit inside Safari.
+    */
+    transform: translateY(-4px) scale(0.88);
+    transform-origin: center center;
   }
 
   /* TITLE */
@@ -1516,7 +1494,6 @@ footer strong {
     margin: 0 0 -8px;
 
     transform: scale(0.78);
-
     transform-origin: center bottom;
   }
 
@@ -1894,7 +1871,8 @@ footer strong {
   footer {
     flex: 0 0 auto;
 
-    padding-top: 2px;
+    padding-top: 0;
+    padding-bottom: 4px;
 
     align-items: center;
   }
