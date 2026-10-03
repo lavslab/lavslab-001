@@ -196,7 +196,15 @@ button {
   padding: 22px 0 16px;
 }
 
+.hero {
+  flex: 1 1 auto;
+  min-height: 0;
+  justify-content: center;
+  padding: 0;
 
+  transform: translateY(-2px) scale(0.92);
+  transform-origin: center center;
+}
 
 /* =========================================
    TITLE
