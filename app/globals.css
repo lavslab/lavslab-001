@@ -1562,7 +1562,7 @@ footer strong {
 
     flex: 0 0 220px;
 
-    margin: 28px 0 -10px;
+    margin: -8px 0 -10px;
 
     display: flex;
     align-items: flex-end;
@@ -1576,6 +1576,9 @@ footer strong {
   .compact {
     width: 205px;
     height: 101px;
+
+     position: relative;
+     top: 22px;
   }
 
   /* BASE */
