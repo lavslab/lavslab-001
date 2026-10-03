@@ -2070,3 +2070,54 @@ footer strong {
     font-size: 4.3px;
   }
 }
+/* =========================================
+   FINAL IPHONE FIT FIX
+   Keep full design inside Safari viewport
+   ========================================= */
+
+@media (max-width: 600px) {
+  .page-shell {
+    height: 100dvh;
+    min-height: 100dvh;
+
+    padding:
+      max(12px, env(safe-area-inset-top))
+      16px
+      max(6px, env(safe-area-inset-bottom));
+  }
+
+  .hero {
+    flex: 1 1 0;
+    min-height: 0;
+
+    justify-content: center;
+
+    transform: scale(0.92);
+    transform-origin: center center;
+  }
+
+  .topbar {
+    transform: scale(0.94);
+    transform-origin: top center;
+  }
+
+  footer {
+    transform: scale(0.94);
+    transform-origin: bottom center;
+  }
+}
+
+/* Extra breathing room for shorter iPhone Safari screens */
+@media (max-width: 600px) and (max-height: 800px) {
+  .hero {
+    transform: scale(0.88);
+  }
+
+  .topbar {
+    transform: scale(0.91);
+  }
+
+  footer {
+    transform: scale(0.91);
+  }
+}
